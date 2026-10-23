@@ -1,47 +1,40 @@
-# charity: water – Water Quest Game Starter
+# Campus Water Quest
 
-In this game, users tap charity: water’s signature yellow jerry cans as fast as they can to earn points. You’ll be working from a partially built version of the game. Some functionality is already provided, and your job is to complete the rest.
+A responsive HTML, CSS, and JavaScript prototype by Nihal Patel, developed with AI assistance from the [GCA-Classroom Water Quest starter](https://github.com/GCA-Classroom/05-cw-game-water-quest). The starter supplied random spawning, a grid, and charity: water image assets. This version completes and expands the behavior and layout.
 
-## What’s Already Done
+## Play
 
-The starter files already include:
+Open `index.html` or serve this folder with a static HTTP server. No installation, dependencies, account, or build step is required.
 
-- A **heading and tagline**
-- A **start button**
-- A **game container** displaying a grid
-- A **placeholder timer and score** (not functional yet)
-- A **logo image** from charity: water
-- Working code that:
-  - Starts the game when the start button is clicked  
-  - Makes jerry cans pop up randomly
+- Start a 30-second round. Tap/click yellow cans for **+10 points**.
+- Spills subtract **5 points**, with a minimum score of zero.
+- One random target appears every **1.2 seconds** (80% can, 20% spill). Missed targets and empty tiles have no penalty.
+- Finish with **100+ points** to win. Reaching the goal before the timer ends does not end the round; later penalties still count.
+- Use **1–9**, left to right by row, or native button controls. **P** pauses/resumes; held-key repeats are ignored.
+- **Reset** immediately clears the previous round and starts a fresh round. **Play again** does the same after results.
+- Pause freezes time and input. Leaving the browser tab auto-pauses; returning requires Resume.
 
-## What You Need to Add
+## Rubric coverage
 
-Here’s what you're required to implement to bring the game to life:
+| Criterion | Implementation |
+| --- | --- |
+| Core interactivity | Each can updates score, progress, and live feedback |
+| Responsive layout | Desktop columns become a single column at 720 px; grid scales to available width |
+| Brand and visuals | Provided charity: water logo and jerry can imagery; yellow #FFC907 and blue #2E9DF7; mission links |
+| Challenge bonus | Random brown spills with an X and SPILL label apply a real score penalty |
+| Reset bonus | Reset clears score, targets, milestones, celebration, and the old interval |
+| Celebrate wins bonus | Final score of at least 100 triggers confetti and a win message; reduced-motion users see a static celebration |
 
-### Game Functionality
+The submission PDF contains the three written reflections. Their first-person language should be reviewed and personalized by the student.
 
-- **Update the score**
-  - +1 point for each can clicked  
+## Prototype scope
 
-- **Add a 30-second timer**
-  - When the timer reaches 0, the game ends  
+There are no real perks, coupons, donations, accounts, or water deliveries. Points are for play. The earlier campus perk concept is deferred to keep this prototype focused. The ending includes an education message for every player.
 
-- **Display a message when the game ends**
-  - If the player scores **20 or more points**, show a **winning** message  
-  - If the player scores **less than 20 points**, show a **"try again"** message  
-  - Create one array of possible winning messages and one array of losing messages  
-  - Depending on whether the user wins or loses, randomly pick and display a message from the appropriate array  
+## Sources and attribution
 
-### Visual Styling
+- Starter and supplied imagery: https://github.com/GCA-Classroom/05-cw-game-water-quest
+- Mission and education: https://www.charitywater.org/global-water-crisis/education
+- Brand resources: https://www.charitywater.org/about/media
 
-- **Add charity: water branding**
-  
-  - Use the provided logo  
-  - Use the [charity: water brand guidelines](https://drive.google.com/file/d/1ct4zYRIwHAtxoNQoeaVwWYPdnruSC6sr/view) to stay on-brand with colors and styling
-  - Add styling rules to ensure your game layout adjusts well across different screen sizes
-
-These are the minimum requirements, but if you'd like an additional challenge go ahead and give the LevelUps a shot! For example, you could add logic to decrease the user's score if they miss a jerry can. Have fun and make the game your own!
-
-If you have any questions or need any assistance with your code, reach out to the HelpHub or attend a Drop-In Hour. You got this!!
-
+This student exercise is inspired by charity: water and does not claim official partnership.
